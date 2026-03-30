@@ -12,14 +12,15 @@
        ENCABEZADO 
   ═══════════════════════════════════════════ -->
 
-  <h1>dbarrientos-dev<small>⌬ħ</small></h1>
+  <h1 title="Mi nombre de usuario en GitHub">dbarrientos-dev<small>⌬ħ</small></h1>
   <p>
     
-    <img src="./img/1.jpg">
+    <img src="./img/1.jpg" alt="Imagen de un astronauta con una bella rosa, en la luna.">
 
     <!--Asi vincularmos sitios web-->
+    <!--EL atributo target es para que wikipedia se abra en otra pestaña-->
     <br>
-    <a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software" alt="¿Que estudias?">Qué estudio personalmente</a>
+    <a href="https://es.wikipedia.org/wiki/Ingenier%C3%ADa_de_software" alt="¿Que estudias?" target="_blank" title="Sitio de la wikipedia: sobre ingeniería de software">¿Qué estudio?</a>
     </br>
 
     <strong>Estudiante de Ingeniería de Software</strong> · Armenia, Quindío, Colombia 🇨🇴<br>
@@ -40,7 +41,7 @@
        Infomación personal
   ═══════════════════════════════════════════ -->
 
-  <h2>Sobre mí</h2>
+  <h2 alt="Infomación personal sobre mi persona">Sobre mí</h2>
 
   <p>
     ¡Hola, es un gusto internauta! Cómo puedes observar soy un simple estudiante de <strong>Ingeniería de Software</strong> en la Corporación Universitaria Empresarial Alexander Von Humboldt (CUE AVH),
@@ -74,7 +75,7 @@
        SETUP / ENTORNO
   ═══════════════════════════════════════════ -->
 
-  <h2>Mi entorno</h2>
+  <h2 alt="Equipo, herramientas y sistema operativo">Mi entorno</h2>
 
   <p>Máquina principal: <strong>HP ProDesk 600 G4</strong> (i5-8500)</p>
   <p>Máquina secundaria: <strong>Inspiron 14R N4110</strong> (i5-2450M)</p>
@@ -116,7 +117,7 @@
        CAMINO AL ÉXITO
   ═══════════════════════════════════════════ -->
 
-  <h2>Formación Actual</h2>
+  <h2 alt="Estudios y mis sueños">Formación Actual</h2>
 
   <dl>
     <dt>Ingeniería de Software</dt>
@@ -169,7 +170,7 @@
        STACK TÉCNICO
   ═══════════════════════════════════════════ -->
 
-  <h2>Stack técnico</h2>
+  <h2 alt="Que lenguajes de programación estoy aprendiendo">Stack técnico</h2>
 
   <h3>Activo</h3>
   <ul>
@@ -201,7 +202,7 @@
        PROYECTOS PERSONALES
   ═══════════════════════════════════════════ -->
 
-  <h2>Proyectos</h2>
+  <h2 alt="Proyectos personales">Proyectos</h2>
 
   <table>
     <caption>Proyectos personales —> dbarrientos-dev</caption>
@@ -273,7 +274,7 @@
   </table>
   <hr>
 
-  <h3>El equipo (El "Kernel")</h3>
+  <h3 alt="Mi grupo de programación">El equipo (El "Kernel")</h3>
 
   <table>
     <caption>Miembros del Grupo</caption>
@@ -290,7 +291,7 @@
     <tbody>
       <tr>
         <td>
-          <a href="https://github.com/dbarrientos-dev" target="_blank">
+          <a href="https://github.com/dbarrientos-dev" target="_blank" alt="Github">
             @dbarrientos-dev
           </a>
         </td>
@@ -301,7 +302,7 @@
 
       <tr>
         <td>
-          <a href="https://github.com/santiago-marin-dev" target="_blank">
+          <a href="https://github.com/santiago-marin-dev" target="_blank" alt="Github">
             @santiago-marin-dev
           </a>
         </td>
@@ -312,7 +313,7 @@
 
       <tr>
         <td>
-          <a href="https://github.com/jsgonzalez-afk" target="_blank">
+          <a href="https://github.com/jsgonzalez-afk" target="_blank" alt="Github">
             @jsgonzalez-afk
           </a>
         </td>
@@ -323,7 +324,7 @@
 
       <tr>
         <td>
-          <a href="https://github.com/Davidsoftware-1" target="_blank">
+          <a href="https://github.com/Davidsoftware-1" target="_blank" alt="Github">
             @Davidsoftware-1
           </a>
         </td>
@@ -334,7 +335,7 @@
 
       <tr>
         <td>
-          <a href="https://github.com/mmmmmmigajas" target="_blank">
+          <a href="https://github.com/mmmmmmigajas" target="_blank" alt="Github">
             @mmmmmmigajas
           </a>
         </td>
@@ -369,11 +370,13 @@
     </li>
   </ul>
 
+  <img src="./img/giphy .gif" alt="Pangolin">
+
   <!-- ═══════════════════════════════════════════
        CONTACTO PERSONAL
   ═══════════════════════════════════════════ -->
 
-  <h2>Contacto</h2>
+  <h2 alt="Infomación personal para contactarme">Contacto</h2>
 
   <ul>
     <li>
@@ -407,6 +410,23 @@
       </a>
     </li>
   </ul>
+
+  <!--minlength es para que exista un minimo de caracteres que el usuario debe de colocar-->
+  <p>Siempre puedes enviarme tu opinión y comentarios, en la siguiente bandeja de formulario</p>
+  <form>
+    <input type="text" name="username" placeholder="escribe tu nombre" required minlength="3">
+    <input type="email" required name="email" placeholder="correo electronico">
+    <input type="password" required name="password" placeholder="contraseña"> 
+    <input type="submit" name="enviar">
+    <p>¿Aceptas nuestros términos y condiciones?</p>
+    <input type="checkbox" name="aceptó condiciones">
+
+    <p>¿Tienes una imagen o archivo para enviarme?</p>
+    <input type="file" name="file">
+    <p>Fecha del envio</p>
+    <input type="date" required name="date">
+ 
+  </form>
 
   <hr>
 
