@@ -1,32 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Técnico Daniel Barrientos
-        </title>
+        <title>Técnico Daniel Barrientos</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="fonts.css">
     </head>
 
     <body>
+
         <h1>¿Qué reparamos?</h1>
+
         <ol>
-            <li>Computadoras</li>
-            <li>Telefonos</li>
-            <li>Aparatos electronicos</li>
+            <li class="electronico">Computadoras</li>
+            <li>Teléfonos</li>
+            <li class="electronico">Aparatos <span>electrónicos</span></li>
             <li>Redes</li>
             <li>Sistemas operativos</li>
         </ol>
 
+        <p><strong>¿Qué distribuciones de GNU/Linux ofrecemos?</strong></p>
 
-        <caption>¿Qué distribuciones de GNU/LINUX OFRECEMOS?</caption>
+        <div>
         <ul>
             <li>Fedora Linux</li>
             <li>Ubuntu</li>
             <li>Linux Mint</li>
             <li>Bazzite</li>
-            <li>CachyOS</li>
+            <li id="sistema-Nuevo">CachyOS</li>
         </ul>
-
-        <p style="color:blueviolet">Porque no instalamos windows?</p>
+        </div>
         
+        <button>PANCITO</button>
+
+    <br>
+        <form class="formulario">
+        <input class= "formulario_input" type="email" alt="bandeja de captura de infomacion" placeholder="colocar tu contraseña"></input>
+        <input class= "formulario_input" type="password" placeholder="contraseña">
+        <input class= "formulario_input" type="submit" value="Iniciar sesión">
+        </form>
+
+    </br>
+        
+
+        <p><strong>¿No instalamos Windows?</strong></p>
+
+        <a href="https://www.wikipedia.com">Mi wikipedia linda</a>
+
+        <style>
+            p {
+                color: red; /* sobrescribe el CSS externo */
+            }
+
+            h1 {
+                color: blue; /* "azul" no existe en CSS → debe ser "blue" */
+            }
+        </style>
+
     </body>
 </html>

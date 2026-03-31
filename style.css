@@ -1,0 +1,88 @@
+body {
+    background-color: #0d0d0d; /* negro más suave, menos agresivo */
+    color: #e0e0e0; /* gris claro → mejor lectura */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Texto general */
+p {
+    color: #cfcfcf; /* legible sobre fondo oscuro */
+    font-size: 14px; /* un poco más cómodo */
+    font-weight: 400; /* evita exceso de grosor */
+    font-style: normal; /* italics solo cuando tengan sentido */
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Título principal */
+h1 {
+    background-color: white;
+    color: #e63946;
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Listas */
+li {
+    color: #b08968; /* más claro → mejor contraste */
+}
+
+/* Texto en línea */
+span {
+    color: #f1f1f1; /* visible, limpio */
+}
+
+/* Clase: contenido electrónico */
+.electronico {
+    color: #9d4edd; /* violeta más moderno */
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* ID importante */
+#sistema-Nuevo {
+    color: #ff4d6d;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* Enlaces */
+a {
+    color: #4cc9f0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Botones */
+button {
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border: none;
+    background-color: #e63946;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c1121f;
+}
+
+div {
+    background-color: #cfcfcf;
+    width: 300px;
+    height: 100px;
+}
+
+input {
+    width: 50%;
+    height: 50%;
+}
+
+form {
+    width: 300px;
+}
