@@ -41,7 +41,7 @@ El sitio está organizado en múltiples páginas, cada una con un propósito cla
 
 ### 🏠 `index.html`
 
-Punto de entrada del sitio.
+Punto de entrada del sitio web.
 Resumen de quién soy, qué hago y acceso a todas las secciones.
 
 ---
