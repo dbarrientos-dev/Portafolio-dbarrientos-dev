@@ -3,20 +3,21 @@
 ═══════════════════════════════════════ */
 
 :root {
-  --negro:       #0a0a0a;
-  --superficie:  #111111;
-  --tarjeta:     #1a1a1a;
-  --borde:       #2a2a2a;
-  --oro:         #c9a227;
-  --oro-claro:   #e8c050;
-  --oro-opaco:   #c9a22740;
-  --texto:       #e8e8e8;
-  --texto-suave: #888888;
-  --code-bg:     #1e1e1e;
+  --negro: #0a0a0a;
+  --superficie: #111;
+  --tarjeta: #1a1a1a;
+  --borde: #2a2a2a;
+  --oro: #c9a227;
+  --oro-claro: #e8c050;
+  --oro-opaco: #c9a22740;
+  --texto: #e8e8e8;
+  --texto-suave: #888;
+  --code-bg: #1e1e1e;
 }
 
+
 /* ═══════════════════════════════════════
-   BASE
+   RESET + BASE
 ═══════════════════════════════════════ */
 
 * {
@@ -31,10 +32,19 @@ body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.7;
+}
+
+
+/* ═══════════════════════════════════════
+   LAYOUT
+═══════════════════════════════════════ */
+
+.contenedor {
   max-width: 860px;
   margin: 0 auto;
   padding: 2rem 1.5rem 4rem;
 }
+
 
 /* ═══════════════════════════════════════
    TIPOGRAFÍA
@@ -49,18 +59,27 @@ h1, h2, h3 {
 }
 
 h1 { font-size: 2.2rem; }
-h2 { font-size: 1.5rem; border-bottom: 1px solid var(--borde); padding-bottom: 0.3rem; }
-h3 { font-size: 1.1rem; color: var(--oro-claro); }
+
+h2 {
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--borde);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: var(--oro-claro);
+}
 
 p {
   margin-bottom: 1rem;
-  color: var(--texto);
 }
 
 small {
   color: var(--texto-suave);
   font-size: 0.85rem;
 }
+
 
 /* ═══════════════════════════════════════
    ENLACES
@@ -76,54 +95,49 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* ═══════════════════════════════════════
-   SEPARADORES
+   COMPONENTES
 ═══════════════════════════════════════ */
 
-hr {
-  border: none;
-  border-top: 1px solid var(--borde);
-  margin: 2.5rem 0;
+/* Tarjeta en vez de div global */
+.card {
+  background: var(--tarjeta);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem 0;
 }
+
+/* Inputs coherentes con el tema */
+input {
+  margin: 5px;
+  padding: 6px 9px;
+  border: 1px solid var(--borde);
+  background: var(--superficie);
+  color: var(--texto);
+  border-radius: 5px;
+}
+
+/* Caja de prueba */
+.box {
+  width: 100px;
+  height: 100px;
+  background: var(--oro);
+  margin: 10px;
+  padding: 25px;
+  border: 2px solid var(--borde);
+}
+
 
 /* ═══════════════════════════════════════
-   CITAS
-═══════════════════════════════════════ */
-
-blockquote {
-  border-left: 3px solid var(--oro);
-  background-color: var(--tarjeta);
-  margin: 1.5rem 0;
-  padding: 1rem 1.5rem;
-  color: var(--texto-suave);
-  font-style: italic;
-}
-
-blockquote footer {
-  margin-top: 0.5rem;
-  font-size: 0.85rem;
-  color: var(--oro-opaco);
-  font-style: normal;
-}
-
-q {
-  color: var(--oro-claro);
-  font-style: italic;
-}
-
-cite {
-  color: var(--oro-claro);
-  font-style: italic;
-}
-
-/* ═══════════════════════════════════════
-   CÓDIGO Y TERMINAL
+   CÓDIGO
 ═══════════════════════════════════════ */
 
 code {
   background-color: var(--code-bg);
   color: var(--oro-claro);
-  font-family: 'Cascadia Code', 'Fira Code', 'Consolas', monospace;
+  font-family: 'Cascadia Code', monospace;
   font-size: 0.88rem;
   padding: 0.15rem 0.45rem;
   border-radius: 4px;
@@ -144,130 +158,35 @@ pre code {
   border: none;
   padding: 0;
   color: var(--texto);
-  font-size: 0.88rem;
 }
 
-kbd {
-  background-color: var(--tarjeta);
-  border: 1px solid var(--borde);
-  border-bottom-width: 2px;
-  border-radius: 4px;
-  padding: 0.1rem 0.45rem;
-  font-family: monospace;
-  font-size: 0.85rem;
-  color: var(--oro-claro);
-}
 
-samp {
-  color: #e06c75;
-  font-family: monospace;
-  font-size: 0.88rem;
+/* ═══════════════════════════════════════
+   IMÁGENES
+═══════════════════════════════════════ */
+
+.centrada {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ═══════════════════════════════════════
-   LISTAS
+  NOMBRE DE USUARIO DE DANIEL BARRIENTOS EN GITHUB
 ═══════════════════════════════════════ */
 
-ul, ol {
-  padding-left: 1.5rem;
-  margin-bottom: 1rem;
+.Miusername {
+  text-align: center;
 }
 
-li {
-  margin-bottom: 0.3rem;
-}
-
-ul li::marker {
-  color: var(--oro);
-}
-
-ol li::marker {
-  color: var(--oro);
-  font-weight: 700;
-}
 
 /* ═══════════════════════════════════════
-   DEFINITION LIST
+   ZONA DE MI SETUP EN CODE
 ═══════════════════════════════════════ */
 
-dl {
-  margin-bottom: 1rem;
+
+pre {
+  text-align: center;
 }
 
-dt {
-  color: var(--oro);
-  font-weight: 700;
-  margin-top: 0.8rem;
-}
-
-dd {
-  color: var(--texto-suave);
-  padding-left: 1.2rem;
-  border-left: 2px solid var(--borde);
-  margin-left: 0;
-}
-
-/* ═══════════════════════════════════════
-   TABLAS
-═══════════════════════════════════════ */
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  font-size: 0.92rem;
-}
-
-caption {
-  color: var(--oro);
-  font-weight: 700;
-  text-align: left;
-  padding-bottom: 0.5rem;
-  font-size: 0.9rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-th {
-  background-color: var(--tarjeta);
-  color: var(--oro);
-  text-align: left;
-  padding: 0.6rem 0.9rem;
-  border-bottom: 2px solid var(--oro-opaco);
-  font-size: 0.85rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-td {
-  padding: 0.55rem 0.9rem;
-  border-bottom: 1px solid var(--borde);
-  vertical-align: top;
-}
-
-tr:hover td {
-  background-color: var(--tarjeta);
-}
-
-tfoot td {
-  color: var(--texto-suave);
-  font-size: 0.85rem;
-  border-top: 1px solid var(--borde);
-  border-bottom: none;
-}
-
-/* ═══════════════════════════════════════
-   MARK Y ABBR
-═══════════════════════════════════════ */
-
-mark {
-  background-color: var(--oro-opaco);
-  color: var(--oro-claro);
-  padding: 0.05rem 0.3rem;
-  border-radius: 3px;
-}
-
-abbr[title] {
-  text-decoration: underline dotted var(--oro-opaco);
-  cursor: help;
-}
