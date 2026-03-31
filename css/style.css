@@ -190,3 +190,12 @@ pre {
   text-align: center;
 }
 
+
+/* ═══════════════════════════════════════
+   MODO OSCURO
+═══════════════════════════════════════ */
+
+.light-mode {
+  background-color: #ffffff;
+  color: #111;
+}
